@@ -1,5 +1,4 @@
 
-// import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 console.log('\n\n\n***************************START***************************\n\n')
 const { createStore, combineReducers, applyMiddleware } = require ('redux')
