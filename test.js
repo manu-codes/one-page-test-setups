@@ -1,7 +1,7 @@
 
 
 console.log('\n\n\n***************************START***************************\n\n')
-const { createStore, combineReducers, applyMiddleware } = require ('redux')
+const { createStore, combineReducers, applyMiddleware } = require('redux')
 
 const aReducer = (state, action) => {
     switch (action.type) {
@@ -27,8 +27,8 @@ const bReducer = (state, action) => {
 
 const configureStore = (initialState) => {
 
-   
-    let rootReducer = combineReducers({ a:aReducer, b:bReducer });
+
+    let rootReducer = combineReducers({ a: aReducer, b: bReducer });
     console.log('configureStore', initialState);
     const str = createStore(aReducer, initialState);
     return str;
@@ -37,7 +37,7 @@ const configureStore = (initialState) => {
 
 const store = configureStore({});
 
-console.log('store',store);
+console.log('store', store);
 
 store.subscribe(() => {
 
